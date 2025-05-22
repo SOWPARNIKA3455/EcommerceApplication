@@ -3,7 +3,6 @@ const router = express.Router();
 
 const userRouter = require('./userRoutes');
 const productRouter = require('./productRoutes');
-const paymentRouter = require('./paymentRoutes');
 const orderRouter = require('./orderRoutes');
 const cartRouter = require('./cartRoutes');
 const reviewRouter = require('./reviewRoutes');
@@ -11,7 +10,6 @@ const adminRouter= require('./adminRoutes');
 
 router.use('/user', userRouter);         
 router.use('/products', productRouter);  
-router.use('/payment', paymentRouter);   
 router.use('/orders', orderRouter);      
 router.use('/cart', cartRouter);        
 router.use('/reviews', reviewRouter);    
